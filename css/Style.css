@@ -1,0 +1,283 @@
+body {
+    background: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/* navbar start */
+.navbar-01 {
+    width: 100%;
+    background: white;
+    backdrop-filter: blur (10px);
+    padding: 15px;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9999;
+}
+.header-01 {
+    font-size: 25px;
+    color: black;
+    font-style: italic;
+     margin-left: 150px;
+}
+.header-01:hover{color : violet;}
+
+span{color : tomato;}
+
+span:hover{color:black;}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+nav ul li {margin-left: 20px;}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color :tomato;
+    border-radius: 2px;
+}
+/* Navbar End */
+
+/* slider start */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  padding-top: 99px;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%); /* efek transparan gelap */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.overlay p {
+  font-size: 1.2em;
+}
+/* slider END */
+.about{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1%;
+    justify-content: center;
+    align-items: center;
+}
+/* Card Content 1 Start */
+.container {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-left: 9%;
+    display: grid;
+    justify-content:space-between;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    gap: 25px;
+    background: transparent;
+   
+}
+.card {
+    background: whitesmoke;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: 0.3s;
+
+   
+}
+
+.card:hover {
+    transform: translateY(-9px);
+}
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+/* button like start*/
+.like-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+  transition: 0.3s;
+}
+
+.like-btn.liked {
+  color: red;
+}
+/* button like END */
+.content {
+    padding: 15px;
+}
+
+.kategori {
+    font-size: 15px;
+    color: rgb(30, 30, 231); /* warna kuning */
+    font-weight: bold;
+}
+
+.content h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.hr-1{
+    margin-top: 2%;
+    width: 90%; 
+    color: darkgray;
+}
+.hr-1-1{
+    margin-top: 2%;
+    width: 90%; 
+    color: darkgray;
+}
+.hr-2{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 90%; 
+    color: darkgray;
+}
+.hr-3{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 90%; 
+    color: darkgray;
+}
+.tanggal {
+    color: #888;
+    font-size: 14px;
+    
+}
+/* Card Content 1 END */
+
+/* Contact Start */
+#contact {
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6)),
+        url(image/SI.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+.Contact-H1 {
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.contact {
+      max-width: 500px;
+      margin: 80px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .contact h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background: #0056b3;
+    }
+
+    .form-box {
+  width: 400px;
+  background: #eee;
+  padding: 20px;
+  border-radius: 10px;
+}
+.social-box {
+  text-align: center;
+}
+
+.social-box img {
+  width: 60px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-box img:hover {
+  transform: scale(1.1);
+}
+
+.social-box p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+/* Contact END */
+
+/* Footer */
+.footer {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px); /* efek kaca */
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+/* Footer */
