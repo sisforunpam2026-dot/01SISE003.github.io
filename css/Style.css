@@ -29,11 +29,41 @@ span{color : tomato;}
 
 span:hover{color:black;}
 
+.menu-icon{
+font-size: 28px;
+padding-right: 5%;
+display: none;
+}
+
+@media only screen and (max-width :768px) {
+.navbar-01 {
+  flex-wrap: wrap;
+
+}
+
+.navbar-01 ul {
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.navbar-01 ul.hidden {
+  display: none;
+}
+
+.menu-icon{
+display: flex;
+align-items: center;
+}
+
+}
+
 nav ul {
     display: flex;
     list-style: none;
     margin-top: 20px;
-    margin-right: 50px;
+    margin-right: 8%;
+    
 }
 nav ul li {margin-left: 20px;}
 nav ul li a{

@@ -20,5 +20,11 @@ document.querySelector("form").addEventListener("submit", function(e){
   e.preventDefault();
   alert("Pesan berhasil dikirim!");
 });
+const menuIcon = document.getElementById("menu-icon");
+const menuList = document.getElementById("menu-list");
 
+menuIcon.addEventListener("click", () =>{
+  menuList.classList.toggle("hidden");
+
+})
 
