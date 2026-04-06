@@ -93,8 +93,9 @@ h2 {text-align:center;}
     .container-kas {
         max-width:1000px;
          margin:auto;
-         padding-top: 10%;
+         padding-top: 20%;
         }
+
 
     .form {
       display:flex;
