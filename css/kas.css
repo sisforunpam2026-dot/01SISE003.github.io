@@ -1,0 +1,244 @@
+body {
+    background: whitesmoke;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/* navbar start */
+.navbar-01 {
+    width: 100%;
+    background: white;
+    backdrop-filter: blur (10px);
+    padding: 15px;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    border: 0 5px 0 0;
+    z-index: 9999;
+}
+/* logo kelas start */
+.logo-kelas img{
+  display: flex ;
+  justify-content: center;
+  align-content: center;
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  padding-left: 30%;
+}
+/* logo kelas END */
+
+.header-01 {
+    font-size: 25px;
+    color: black;
+    font-style: italic;
+     margin-left: 150px;
+}
+.header-01:hover{color : violet;}
+
+span{color : tomato;}
+
+span:hover{color:black;}
+
+.menu-icon{
+font-size: 28px;
+padding-right: 5%;
+display: none;
+}
+
+@media only screen and (max-width :768px) {
+.navbar-01 {
+  flex-wrap: wrap;
+
+}
+
+.navbar-01 ul {
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.navbar-01 ul.hidden {
+  display: none;
+}
+
+.menu-icon{
+display: flex;
+align-items: center;
+}
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 8%;
+    
+}
+nav ul li {margin-left: 20px;}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color :tomato;
+    border-radius: 2px;
+}
+/* Navbar End */
+
+h2 {text-align:center;}
+    .container-kas {
+        max-width:1000px;
+         margin:auto;
+         padding-top: 10%;
+        }
+
+    .form {
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-bottom:20px;
+    }
+
+    input, select, button {
+      padding:10px;
+    }
+
+    button {
+      background:#007bff;
+      color:#fff;
+      border:none;
+      cursor:pointer;
+    }
+
+    table {
+      width:100%;
+      border-collapse:collapse;
+      background:#fff;
+    }
+
+    th, td {
+      padding:10px;
+      border:1px solid #ddd;
+      text-align:center;
+    }
+
+    th {
+      background:#007bff;
+      color:white;
+    }
+
+    .total {
+      margin-top:15px;
+      font-size:18px;
+      font-weight:bold;
+      text-align:right;
+    }
+
+    /* Contact Start */
+#contact {
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6)),
+        url(image/SI.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+.Contact-H1 {
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.contact {
+      max-width: 500px;
+      margin: 80px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .contact h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background: #0056b3;
+    }
+
+    .form-box {
+  width: 400px;
+  background: #eee;
+  padding: 20px;
+  border-radius: 10px;
+}
+.social-box {
+  text-align: center;
+}
+
+.social-box img {
+  width: 60px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-box img:hover {
+  transform: scale(1.1);
+}
+
+.social-box p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+/* Contact END */
+.hr-1{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 90%; 
+    color: darkgray;
+}
+.hr-2{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 90%; 
+    color: darkgray;
+}
+
+/* Footer */
+.footer {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px); /* efek kaca */
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+/* Footer */
