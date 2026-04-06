@@ -16,6 +16,17 @@ body {
     position: fixed;
     z-index: 9999;
 }
+/* logo kelas start */
+.logo-kelas img{
+  display: flex ;
+  justify-content: center;
+  align-content: center;
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  padding-left: 30%;
+}
+/* logo kelas END */
 
 .header-01 {
     font-size: 25px;
