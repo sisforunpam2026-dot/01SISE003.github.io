@@ -1,3 +1,13 @@
+const menuIcon = document.getElementById("menu-icon");
+const menuList = document.getElementById("menu-list");
+
+menuIcon.addEventListener("click", () =>{
+menuList.classList.toggle("hidden");
+
+})
+
+
+
 let slides = document.querySelectorAll('.slide');
 let index = 0;
 
@@ -20,11 +30,5 @@ document.querySelector("form").addEventListener("submit", function(e){
   e.preventDefault();
   alert("Pesan berhasil dikirim!");
 });
-const menuIcon = document.getElementById("menu-icon");
-const menuList = document.getElementById("menu-list");
 
-menuIcon.addEventListener("click", () =>{
-  menuList.classList.toggle("hidden");
-
-})
 

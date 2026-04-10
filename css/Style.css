@@ -14,42 +14,18 @@ body {
     display: flex;
     justify-content: space-between;
     position: fixed;
+    border: 0 5px 0 0;
     z-index: 9999;
 }
-/* logo kelas start */
-.logo-kelas img{
-  display: flex ;
-  justify-content: center;
-  align-content: center;
-  width: 120px;
-  height: 80px;
-  object-fit: cover;
-  padding-left: 30%;
-}
-/* logo kelas END */
-
-.header-01 {
-    font-size: 25px;
-    color: black;
-    font-style: italic;
-     margin-left: 150px;
-}
-.header-01:hover{color : violet;}
-
-span{color : tomato;}
-
-span:hover{color:black;}
-
 .menu-icon{
 font-size: 28px;
-padding-right: 5%;
+padding-right: 10%;
 display: none;
 }
 
-@media only screen and (max-width :768px) {
+@media only screen and (max-width :768px){
 .navbar-01 {
-  flex-wrap: wrap;
-
+  flex-wrap: wrap; 
 }
 
 .navbar-01 ul {
@@ -66,8 +42,20 @@ display: none;
 display: flex;
 align-items: center;
 }
-
 }
+
+/* logo kelas start */
+.logo-kelas img{
+  display: flex ;
+  justify-content: center;
+  align-content: center;
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  padding-left: 30%;
+}
+
+/* logo kelas END */
 
 nav ul {
     display: flex;
@@ -80,11 +68,13 @@ nav ul li {margin-left: 20px;}
 nav ul li a{
     color: black;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 nav ul li a:hover{
-    background-color :tomato;
-    border-radius: 2px;
+  color: lab(62.05% 56.17 65.15);
+    border-bottom: 3px solid gold;
+    transition: 0.3s;
 }
 /* Navbar End */
 
@@ -323,5 +313,6 @@ nav ul li a:hover{
   color: white;
   text-align: center;
   padding: 20px;
+  margin-bottom: 0;
 }
 /* Footer */

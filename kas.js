@@ -1,12 +1,13 @@
+//Menu Navbar//
 const menuIcon = document.getElementById("menu-icon");
 const menuList = document.getElementById("menu-list");
 
 menuIcon.addEventListener("click", () =>{
-  menuList.classList.toggle("hidden");
+menuList.classList.toggle("hidden");
 
 })
 
-
+//Kas Kelas//
 let dataKas = JSON.parse(localStorage.getItem("kas")) || [];
 
 function render() {

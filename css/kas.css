@@ -50,7 +50,6 @@ display: none;
 @media only screen and (max-width :768px) {
 .navbar-01 {
   flex-wrap: wrap;
-
 }
 
 .navbar-01 ul {
@@ -67,7 +66,6 @@ display: none;
 display: flex;
 align-items: center;
 }
-
 }
 
 nav ul {
@@ -81,17 +79,20 @@ nav ul li {margin-left: 20px;}
 nav ul li a{
     color: black;
     text-decoration: none;
+    transition: 0,3s;
 }
 
 nav ul li a:hover{
-    background-color :tomato;
-    border-radius: 2px;
+   color: lab(62.05% 56.17 65.15);
+    border-bottom: 3px solid gold;
+    transition: 0.3s;
 }
 /* Navbar End */
 
 h2 {text-align:center;}
+
     .container-kas {
-        max-width:1000px;
+        max-width:90%;
          margin:auto;
          padding-top: 20%;
         }
@@ -241,5 +242,6 @@ h2 {text-align:center;}
   color: white;
   text-align: center;
   padding: 20px;
+  margin-bottom: 0;
 }
 /* Footer */
