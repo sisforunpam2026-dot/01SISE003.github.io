@@ -159,16 +159,16 @@ nav ul li a:hover {
     transform: translateX(0);
   }
   25% {
-    transform: translateX(-270px);
+    transform: translateX(-270px); //-270
   }
   50% {
-    transform: translateX(-540px);
+    transform: translateX(-540px); //-540
   }
   75% {
-    transform: translateX(-810px);
+    transform: translateX(-810px); // -810
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(0); // 0
   }
 }
 /* Slider-Content-new End */
