@@ -1,3 +1,4 @@
+// icon menu start//
 const menuIcon = document.getElementById("menu-icon");
 const menuList = document.getElementById("menu-list");
 
@@ -5,9 +6,9 @@ menuIcon.addEventListener("click", () =>{
 menuList.classList.toggle("hidden");
 
 })
+//icon menu END//
 
-
-
+// Slider Start //
 let slides = document.querySelectorAll('.slide');
 let index = 0;
 
@@ -23,12 +24,13 @@ function showSlide() {
     index = 0;
   }
 }
-
 setInterval(showSlide, 3000); // ganti setiap 3 detik
-// Contact
+// Slider END //
+
+// Contact start//
 document.querySelector("form").addEventListener("submit", function(e){
   e.preventDefault();
   alert("Pesan berhasil dikirim!");
 });
 
-
+// Contact END//
