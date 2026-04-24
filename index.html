@@ -20,16 +20,21 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="light">
     <!-- Navbar Start -->
     <nav class="navbar-01">
       <div class="logo-kelas">
         <img src="image/logokelas.png" alt="logokelas" />
       </div>
+
       <div id="menu-icon" class="menu-icon">
         <i class="ph ph-list"></i>
       </div>
+
       <ul id="menu-list" class="hidden">
+        <button onclick="toggleMode()" id="toggle-theme">
+          <i class="ri-moon-line"></i>
+        </button>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -69,6 +74,7 @@
     <!-- Slider END -->
     <hr class="hr-1" />
     <!-- slider-content-new Start-->
+
     <div class="slider-content-update">
       <h2 class="header-slider">New Update</h2>
       <div class="slides-content">
@@ -121,6 +127,7 @@
         </div>
       </div>
     </div>
+
     <!-- slider-content-new End-->
     <hr class="hr-1" />
 

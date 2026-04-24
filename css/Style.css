@@ -1,9 +1,60 @@
 body {
-  background: white;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
+
+/* MODE TERANG */
+body.light {
+    background: white;
+    color: black;
+}
+
+/* MODE GELAP */
+body.dark {
+    background: #121212;
+    color: white;
+}
+
+body.dark .content-new h3{
+    color: black;
+}
+
+body.dark .content-new p{
+    color: black;
+}
+
+body.dark .content h3{
+  color: #121212;
+}
+
+body.dark .navbar-01 .menu-icon {
+  color: #121212;
+}
+body.dark #contact {
+  background: #121212;
+}
+
+body.dark .contact h2 {
+  color: #121212;
+}
+
+
+#toggle-theme {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+#toggle-theme i:hover {
+  color: rgb(0, 255, 255);
+}
+
+
 /* navbar start */
 .navbar-01 {
   width: 100%;
@@ -17,6 +68,7 @@ body {
   border: 0 5px 0 0;
   z-index: 9999;
 }
+
 .menu-icon {
   font-size: 28px;
   padding-right: 10%;
@@ -362,11 +414,11 @@ nav ul li a:hover {
 }
 /* Footer */
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
   }
-}
+} */
 
 @media (max-width: 768px) {
   .navbar-01 {
@@ -383,6 +435,10 @@ nav ul li a:hover {
     display: none;
   }
 
+  /* .navbar-01 ul.hidden #toogle-theme {
+display: flex;
+  } */
+
   .menu-icon {
     display: flex;
     align-items: center;
@@ -390,4 +446,9 @@ nav ul li a:hover {
   .card h3 {
     font-size: 12px;
   }
+
+  .container-card {
+     grid-template-columns: repeat(1, 1fr);
+  }
+
 }

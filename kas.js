@@ -2,10 +2,24 @@
 const menuIcon = document.getElementById("menu-icon");
 const menuList = document.getElementById("menu-list");
 
-menuIcon.addEventListener("click", () =>{
-menuList.classList.toggle("hidden");
+menuIcon.addEventListener("click", () => {
+  menuList.classList.toggle("hidden");
+});
 
-})
+// Mode Theme Start//
+function toggleMode() {
+  let body = document.body;
+
+  if (body.classList.contains("light")) {
+    body.classList.remove("light");
+    body.classList.add("dark");
+  } else {
+    body.classList.remove("dark");
+    body.classList.add("light");
+  }
+}
+
+//Mode Theme END//
 
 //Kas Kelas//
 let dataKas = JSON.parse(localStorage.getItem("kas")) || [];

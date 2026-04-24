@@ -1,106 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEB 01SISE003</title>
-    <link rel="stylesheet" href="css/kas.css"/>
-     <link
+    <link rel="stylesheet" href="css/kas.css" />
+    <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
-     <link
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
-</head>
-<body>
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="light">
     <!-- Navbar Start -->
-     <nav class="navbar-01">
-        <!-- <h2 class="header-01">WEB of <span>01SISE003.</span></h2> -->
-         <div class="logo-kelas">
-            <img src="image/logokelas.png" alt="logokelas">
-         </div>
-        <div id="menu-icon" class="menu-icon">
+    <nav class="navbar-01">
+      <!-- <h2 class="header-01">WEB of <span>01SISE003.</span></h2> -->
+      <div class="logo-kelas">
+        <img src="image/logokelas.png" alt="logokelas" />
+      </div>
+      <div id="menu-icon" class="menu-icon">
         <i class="ph ph-list"></i>
-        </div>
-        <ul id="menu-list" class="hidden">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">About</a></li>
-            <li><a href="index.html">Contact</a></li>
-            <li><a href="kas.html">Kas</a></li>
-        </ul>
-        
-     </nav>
+      </div>
+      <ul id="menu-list" class="hidden">
+        <button onclick="toggleMode()" id="toggle-theme">
+          <i class="ri-moon-line"></i>
+        </button>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Contact</a></li>
+        <li><a href="kas.html">Kas</a></li>
+      </ul>
+    </nav>
     <!-- Navbar END -->
 
     <!-- Form Kas Kelas Start -->
     <div class="container-kas">
-  <h2>Laporan Kas Kelas</h2>
+      <h2>Laporan Kas Kelas</h2>
 
-  <div class="form">
-    <input type="date" id="tanggal">
-    <input type="text" id="keterangan" placeholder="Keterangan">
-    <input type="number" id="jumlah" placeholder="Jumlah">
-    <select id="jenis">
-      <option value="Masuk">Kas Masuk</option>
-      <option value="Keluar">Kas Keluar</option>
-    </select>
-    <button onclick="tambahData()">Tambah</button>
-  </div>
+      <div class="form">
+        <input type="date" id="tanggal" />
+        <input type="text" id="keterangan" placeholder="Keterangan" />
+        <input type="number" id="jumlah" placeholder="Jumlah" />
+        <select id="jenis">
+          <option value="Masuk">Kas Masuk</option>
+          <option value="Keluar">Kas Keluar</option>
+        </select>
+        <button onclick="tambahData()">Tambah</button>
+      </div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>No</th>
-        <th>Tanggal</th>
-        <!-- <th>Nama</th> -->
-        <th>Keterangan</th>
-        <th>Jenis</th>
-        <th>Jumlah</th>
-        <th>Aksi</th>
-      </tr>
-    </thead>
-    <tbody id="tbody"></tbody>
-  </table>
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Tanggal</th>
+            <!-- <th>Nama</th> -->
+            <th>Keterangan</th>
+            <th>Jenis</th>
+            <th>Jumlah</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
 
-  <div class="total" id="total">Total Kas: Rp 0</div>
-</div>
-<!-- Form Kelas END -->
+      <div class="total" id="total">Total Kas: Rp 0</div>
+    </div>
+    <!-- Form Kelas END -->
 
-<hr class="hr-1">
+    <hr class="hr-1" />
 
- <!-- Contact Start -->
-  <section id="contact">
-    <h1 class="Contact-H1"> Contact :</h1>
-<div class="contact" id="kontak">
-  <h2>Hubungi Kami</h2>
-  
-  <form>
-    <input type="text" placeholder="Nama" required>
-    <input type="email" placeholder="Email" required>
-    <textarea rows="5" placeholder="Pesan" required></textarea>
-    <button type="submit">Kirim</button>
-  </form>
-</div>
+    <!-- Contact Start -->
+    <section id="contact">
+      <h1 class="Contact-H1">Contact :</h1>
+      <div class="contact" id="kontak">
+        <h2>Hubungi Kami</h2>
 
-<div class="social-box">
-  <h2>SOSIAL MEDIA :</h2>
-    <a href="https://www.instagram.com/01_sise_003?utm_source=qr&igsh=MXBpOWt5cXVlOHZleQ==" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-      <p>@01SISE003</p>
-    </a>
-  </div>
-</section>
-       <!-- Contact END -->
-        <hr class="hr-2">
+        <form>
+          <input type="text" placeholder="Nama" required />
+          <input type="email" placeholder="Email" required />
+          <textarea rows="5" placeholder="Pesan" required></textarea>
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
 
-<script src="kas.js"></script>
+      <div class="social-box">
+        <h2>SOSIAL MEDIA :</h2>
+        <a
+          href="https://www.instagram.com/01_sise_003?utm_source=qr&igsh=MXBpOWt5cXVlOHZleQ=="
+          target="_blank"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+            alt="Instagram"
+          />
+          <p>@01SISE003</p>
+        </a>
+      </div>
+    </section>
+    <!-- Contact END -->
+    <hr class="hr-2" />
 
-</body>
- <!-- FOOTER -->
-       <footer class="footer"> 
-        <p>© 2026 Web Of 01SISE003 by Agus. All Rights Reserved.</p>
-       </footer>
-      <!-- FOOTER END-->
+    <script src="kas.js"></script>
+  </body>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Web Of 01SISE003 by Agus. All Rights Reserved.</p>
+  </footer>
+  <!-- FOOTER END-->
 </html>

@@ -4,6 +4,42 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
 }
+
+/* MODE TERANG */
+body.light {
+    background: white;
+    color: black;
+}
+
+/* MODE GELAP */
+body.dark {
+    background: #121212;
+    color: white;
+}
+
+body.dark .content-new h3{
+    color: black;
+}
+
+body.dark .content-new p{
+    color: black;
+}
+
+body.dark .content h3{
+  color: #121212;
+}
+
+body.dark .navbar-01 .menu-icon {
+  color: #121212;
+}
+body.dark #contact {
+  background: #121212;
+}
+
+body.dark .contact h2 {
+  color: #121212;
+}
+
 /* navbar start */
 .navbar-01 {
     width: 100%;
@@ -17,6 +53,27 @@ body {
     border: 0 5px 0 0;
     z-index: 9999;
 }
+
+nav ul {
+  align-items: center;
+}
+
+nav ul button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: black;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+nav ul button:hover{
+  color: rgb(0, 255, 255);
+}
+
 /* logo kelas start */
 .logo-kelas img{
   display: flex ;
@@ -65,6 +122,7 @@ display: none;
 .menu-icon{
 display: flex;
 align-items: center;
+margin-right: 10%;
 }
 }
 
@@ -83,7 +141,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-   color: lab(62.05% 56.17 65.15);
+   color: rgb(28, 255, 255);
     border-bottom: 3px solid gold;
     transition: 0.3s;
 }
