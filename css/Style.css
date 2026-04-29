@@ -1,64 +1,22 @@
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --main-color: #7cf03d;
+  --white-color: #fff;
+  --disabled-color: #fff3;
+}
+
 body {
   margin: 0;
   padding: 0;
+  background: var(--bg-color);
   font-family: Arial, sans-serif;
 }
-
-/* MODE TERANG */
-body.light {
-    background: white;
-    color: black;
-}
-
-/* MODE GELAP */
-body.dark {
-    background: #121212;
-    color: white;
-}
-
-body.dark .content-new h3{
-    color: black;
-}
-
-body.dark .content-new p{
-    color: black;
-}
-
-body.dark .content h3{
-  color: #121212;
-}
-
-body.dark .navbar-01 .menu-icon {
-  color: #121212;
-}
-body.dark #contact {
-  background: #121212;
-}
-
-body.dark .contact h2 {
-  color: #121212;
-}
-
-
-#toggle-theme {
-  display: flex;
-  align-items: center;
-  background: transparent;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  transition: .5s;
-}
-
-#toggle-theme i:hover {
-  color: rgb(0, 255, 255);
-}
-
 
 /* navbar start */
 .navbar-01 {
   width: 100%;
-  background: white;
+  background: var(--second-bg-color);
   backdrop-filter: blur (10px);
   padding: 15px;
   margin-top: 0;
@@ -70,12 +28,24 @@ body.dark .contact h2 {
 }
 
 .menu-icon {
+  color: var(--white-color);
   font-size: 28px;
   padding-right: 10%;
   display: none;
 }
 
 /* logo kelas start */
+
+.logo-kelas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-left: 30px;
+  width: 120px;
+  border-radius: 50%;
+  height: 80px;
+}
 .logo-kelas img {
   display: flex;
   justify-content: center;
@@ -83,7 +53,10 @@ body.dark .contact h2 {
   width: 120px;
   height: 80px;
   object-fit: cover;
-  padding-left: 30%;
+  border-radius: 50%;
+}
+.logo-kelas:hover {
+  background: var(--main-color);
 }
 
 /* logo kelas END */
@@ -92,7 +65,8 @@ nav ul {
   display: flex;
   list-style: none;
   margin-top: 20px;
-  margin-right: 8%;
+  margin-right: 10%;
+  gap: 2rem;
 }
 nav ul li {
   display: flex;
@@ -101,15 +75,16 @@ nav ul li {
 }
 
 nav ul li a {
-  color: black;
+  color: var(--white-color);
   text-decoration: none;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 1.3rem;
+  transition: .5s;
 }
 
 nav ul li a:hover {
-  color: rgb(28, 221, 255);
-  border-bottom: 3px solid rgb(28, 221, 255);
+  color: var(--main-color);
+  border-bottom: 2px solid var(--main-color);
   transition: 0.5s ease-in-out;
 }
 /* Navbar End */
@@ -167,17 +142,21 @@ nav ul li a:hover {
   width: 80%;
   height: 400px;
   margin: 12% 10%;
-  /* background: whitesmoke; */
+  background: var(--second-bg-color);
   border-radius: 12px;
 }
 
-.header-slider {
-  color: rgb(15, 240, 15);
+ .header-slider{
+  color: var(--white-color);
   font-size: 40px;
   margin-top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.header-slider span {
+  color: var(--main-color);
 }
 
 .slides-content {
@@ -189,10 +168,16 @@ nav ul li a:hover {
 /* CARD */
 .card-content {
   min-width: 250px;
-  background: #fff;
+  background: transparent;
   border-radius: 15px;
   overflow: hidden;
+  border: .2rem solid var(--bg-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: .5s;
+}
+
+.card-content:hover {
+  border: 0.015rem solid var(--main-color);
 }
 
 .card-content img {
@@ -203,6 +188,15 @@ nav ul li a:hover {
 
 .content-new {
   padding: 15px;
+  background: transparent;
+}
+
+.content-new h3 {
+  color: var(--main-color);
+}
+
+.content-new p {
+  color: var(--white-color);
 }
 
 /* ANIMATION */
@@ -233,21 +227,29 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
 }
+
+.about h1 {
+  color: var(--white-color);
+}
+
+.about p {
+  color: var(--white-color);
+}
 /* Card Content 1 Start */
 .container-card {
   width: 100%;
   margin-top: 60px;
   margin-bottom: 30px;
-  margin-left: 9%;
+  margin-left: 15%;
   display: grid;
   justify-content: space-between;
   grid-template-columns: repeat(2, 1fr);
-  width: 80%;
+  width: 70%;
   gap: 25px;
 }
 
 .card {
-  background: whitesmoke;
+  background: var(--second-bg-color);
   width: 100%;
   border-radius: 20px;
   overflow: hidden;
@@ -256,13 +258,23 @@ nav ul li a:hover {
 }
 
 .card:hover {
-  transform: translateY(-9px);
-  box-shadow: 0 14px 15px rgb(0, 255, 255);
+  transform: scale(.9);
+  box-shadow: 0 14px 15px rgb(0, 0, 0, .5);
+  border: .2rem solid var(--main-color);
 }
 .card img {
   width: 100%;
   height: 350px;
   object-fit: cover;
+}
+
+.card .kategori {
+  color: var(--main-color);
+  font-size: 1.6rem;
+}
+
+.card .numb {
+  font-size: 1.6rem;
 }
 /* button like start*/
 .like-btn {
@@ -270,7 +282,7 @@ nav ul li a:hover {
   border: none;
   cursor: pointer;
   font-size: 16px;
-  color: #555;
+  color: var(--white-color);
   transition: 0.3s;
 }
 
@@ -290,7 +302,8 @@ nav ul li a:hover {
 
 .content h3 {
   margin: 10px 0;
-  font-size: 18px;
+  font-size: 1.2rem;
+  color: var(--white-color);
 }
 .hr-1 {
   margin-top: 2%;
@@ -322,15 +335,14 @@ nav ul li a:hover {
 
 /* Contact Start */
 #contact {
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6)),
-    url(image/SI.png);
+  background: var(--bg-color);
   background-size: cover;
   background-position: center;
   border-radius: 10px;
   padding: 20px;
 }
 .Contact-H1 {
+  color: var(--main-color);
   font-size: 30px;
   display: flex;
   text-align: center;
@@ -342,7 +354,7 @@ nav ul li a:hover {
 .contact {
   max-width: 500px;
   margin: 80px auto;
-  background: white;
+  background: var(--second-bg-color);
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -351,6 +363,15 @@ nav ul li a:hover {
 .contact h2 {
   text-align: center;
   margin-bottom: 20px;
+  color: var(--white-color);
+}
+
+.contact h2 span {
+  color: var(--main-color);
+}
+
+.contact form {
+  background: var(--second-bg-color);
 }
 
 .contact input,
@@ -358,7 +379,8 @@ nav ul li a:hover {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #ccc;
+  align-items: center;
+  border: 1px solid var(--main-color);
   border-radius: 5px;
 }
 
@@ -366,7 +388,7 @@ nav ul li a:hover {
   width: 100%;
   padding: 10px;
   background: #007bff;
-  color: white;
+  color: var(--white-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -376,12 +398,6 @@ nav ul li a:hover {
   background: #0056b3;
 }
 
-.form-box {
-  width: 400px;
-  background: #eee;
-  padding: 20px;
-  border-radius: 10px;
-}
 .social-box {
   text-align: center;
 }
@@ -396,6 +412,10 @@ nav ul li a:hover {
   transform: scale(1.1);
 }
 
+.social-box h2 {
+  color: var(--main-color);
+}
+
 .social-box p {
   margin-top: 10px;
   font-weight: bold;
@@ -404,7 +424,7 @@ nav ul li a:hover {
 
 /* Footer */
 .footer {
-  background: rgba(0, 0, 0, 0.6);
+  background: var(--second-bg-color);
   backdrop-filter: blur(10px); /* efek kaca */
   -webkit-backdrop-filter: blur(10px);
   color: white;
@@ -420,7 +440,7 @@ nav ul li a:hover {
   }
 } */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .navbar-01 {
     flex-wrap: wrap;
   }
@@ -435,10 +455,6 @@ nav ul li a:hover {
     display: none;
   }
 
-  /* .navbar-01 ul.hidden #toogle-theme {
-display: flex;
-  } */
-
   .menu-icon {
     display: flex;
     align-items: center;
@@ -451,4 +467,19 @@ display: flex;
      grid-template-columns: repeat(1, 1fr);
   }
 
+}
+
+@media screen and (max-width:500px) {
+  .navbar-01 ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .about h1 {
+    color: var(--main-color);
+    font-size: 2rem;
+  }
+  .about p::after {
+    font-size: .6rem;
+  }
 }

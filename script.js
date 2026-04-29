@@ -7,21 +7,6 @@ menuIcon.addEventListener("click", () => {
 });
 //icon menu END//
 
-// Mode Theme Start//
-function toggleMode() {
-    let body = document.body;
-
-    if(body.classList.contains("light")){
-        body.classList.remove("light");
-        body.classList.add("dark");
-    } else {
-        body.classList.remove("dark");
-        body.classList.add("light");
-    }
-}
-
-//Mode Theme END//
-
 // Slider Start //
 let slides = document.querySelectorAll(".slide");
 let index = 0;

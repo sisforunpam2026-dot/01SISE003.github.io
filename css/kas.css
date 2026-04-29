@@ -1,82 +1,39 @@
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --main-color: #7cf03d;
+  --white-color: #fff;
+  --disabled-color: #fff3;
+}
+
 body {
-    background: whitesmoke;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* MODE TERANG */
-body.light {
-    background: white;
-    color: black;
-}
-
-/* MODE GELAP */
-body.dark {
-    background: #121212;
-    color: white;
-}
-
-body.dark .content-new h3{
-    color: black;
-}
-
-body.dark .content-new p{
-    color: black;
-}
-
-body.dark .content h3{
-  color: #121212;
-}
-
-body.dark .navbar-01 .menu-icon {
-  color: #121212;
-}
-body.dark #contact {
-  background: #121212;
-}
-
-body.dark .contact h2 {
-  color: #121212;
+  background: var(--bg-color);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 /* navbar start */
 .navbar-01 {
-    width: 100%;
-    background: white;
-    backdrop-filter: blur (10px);
-    padding: 15px;
-    margin-top: 0;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    border: 0 5px 0 0;
-    z-index: 9999;
+  width: 100%;
+  background: var(--second-bg-color);
+  backdrop-filter: blur (10px);
+  padding: 15px;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  border: 0 5px 0 0;
+  z-index: 9999;
 }
 
 nav ul {
   align-items: center;
 }
 
-nav ul button{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  color: black;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  transition: .5s;
-}
-
-nav ul button:hover{
-  color: rgb(0, 255, 255);
-}
-
 /* logo kelas start */
-.logo-kelas img{
-  display: flex ;
+.logo-kelas img {
+  display: flex;
   justify-content: center;
   align-content: center;
   width: 120px;
@@ -87,174 +44,202 @@ nav ul button:hover{
 /* logo kelas END */
 
 .header-01 {
-    font-size: 25px;
-    color: black;
-    font-style: italic;
-     margin-left: 150px;
+  font-size: 25px;
+  color: black;
+  font-style: italic;
+  margin-left: 150px;
 }
-.header-01:hover{color : violet;}
-
-span{color : tomato;}
-
-span:hover{color:black;}
-
-.menu-icon{
-font-size: 28px;
-padding-right: 5%;
-display: none;
+.header-01:hover {
+  color: violet;
 }
 
-@media only screen and (max-width :768px) {
-.navbar-01 {
-  flex-wrap: wrap;
+span {
+  color: tomato;
 }
 
-.navbar-01 ul {
-  flex-direction: column;
-  gap: 15px;
-  width: 100%;
+span:hover {
+  color: black;
 }
 
-.navbar-01 ul.hidden {
+.menu-icon {
+  font-size: 28px;
+  padding-right: 5%;
   display: none;
 }
 
-.menu-icon{
-display: flex;
-align-items: center;
-margin-right: 10%;
-}
+@media only screen and (max-width: 768px) {
+  .navbar-01 {
+    flex-wrap: wrap;
+  }
+
+  .navbar-01 ul {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .navbar-01 ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+  }
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    margin-top: 20px;
-    margin-right: 8%;
-    
+  display: flex;
+  list-style: none;
+  margin-top: 20px;
+  margin-right: 8%;
 }
-nav ul li {margin-left: 20px;}
-nav ul li a{
-    color: black;
-    text-decoration: none;
-    transition: 0,3s;
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  color: var(--white-color);
+  font-size: 1.2rem;
+  gap: 1.2rem;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-nav ul li a:hover{
-   color: rgb(28, 255, 255);
-    border-bottom: 3px solid gold;
-    transition: 0.3s;
+nav ul li a:hover {
+  color: var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+  transition: 0.3s;
 }
 /* Navbar End */
 
-h2 {text-align:center;}
+h2 {
+  text-align: center;
+}
 
-    .container-kas {
-        max-width:90%;
-         margin:auto;
-         padding-top: 20%;
-        }
+.container-kas {
+  max-width: 90%;
+  margin: auto;
+  padding-top: 20%;
+}
+.container-kas h2 {
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
 
+.container-kas h2>span {
+  color: var(--main-color);
+  font-size: 1.5rem;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
 
-    .form {
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      margin-bottom:20px;
-    }
+input,
+select,
+button {
+  padding: 10px;
+  border-radius: .2rem;
+}
 
-    input, select, button {
-      padding:10px;
-    }
+button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
 
-    button {
-      background:#007bff;
-      color:#fff;
-      border:none;
-      cursor:pointer;
-    }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
 
-    table {
-      width:100%;
-      border-collapse:collapse;
-      background:#fff;
-    }
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
 
-    th, td {
-      padding:10px;
-      border:1px solid #ddd;
-      text-align:center;
-    }
+th {
+  background: #007bff;
+  color: white;
+}
 
-    th {
-      background:#007bff;
-      color:white;
-    }
+.total {
+  color: var(--white-color);
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+}
 
-    .total {
-      margin-top:15px;
-      font-size:18px;
-      font-weight:bold;
-      text-align:right;
-    }
-
-    /* Contact Start */
+/* Contact Start */
 #contact {
-    background: 
-        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6)),
-        url(image/SI.png);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    padding: 20px;
+  background: var(--bg-color);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 20px;
 }
 .Contact-H1 {
-    font-size: 30px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0;
-    padding-bottom: 0;
+  color: var(--main-color);
+  font-size: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .contact {
-      max-width: 500px;
-      margin: 80px auto;
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
+  max-width: 500px;
+  margin: 80px auto;
+  background: var(--second-bg-color);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
 
-    .contact h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+.contact h2 {
+  color: var(--white-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-    .contact input,
-    .contact textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
+.contact h2>span {
+  color: var(--main-color);
+}
 
-    .contact button {
-      width: 100%;
-      padding: 10px;
-      background: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-    .contact button:hover {
-      background: #0056b3;
-    }
+.contact button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-    .form-box {
+.contact button:hover {
+  background: #0056b3;
+}
+
+.form-box {
   width: 400px;
   background: #eee;
   padding: 20px;
@@ -264,37 +249,36 @@ h2 {text-align:center;}
   text-align: center;
 }
 
+.social-box h2 {
+  color: var(--main-color);
+}
 .social-box img {
   width: 60px;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-.social-box img:hover {
-  transform: scale(1.1);
-}
 
 .social-box p {
   margin-top: 10px;
   font-weight: bold;
 }
 /* Contact END */
-.hr-1{
-    margin-top: 2%;
-    margin-bottom: 2%;
-    width: 90%; 
-    color: darkgray;
+.hr-1 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 90%;
+  color: darkgray;
 }
-.hr-2{
-    margin-top: 2%;
-    margin-bottom: 2%;
-    width: 90%; 
-    color: darkgray;
+.hr-2 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 90%;
+  color: darkgray;
 }
 
 /* Footer */
 .footer {
-  background: rgba(0, 0, 0, 0.6);
+  background: var(--second-bg-color);
   backdrop-filter: blur(10px); /* efek kaca */
   -webkit-backdrop-filter: blur(10px);
   color: white;
