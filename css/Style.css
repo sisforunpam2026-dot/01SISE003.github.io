@@ -142,7 +142,7 @@ nav ul li a:hover {
   margin-bottom:20px;
   color: #7cf03d;
 }
-.gallery{
+.gallerynew{
             max-width:1200px;
             margin:auto;
 
@@ -152,7 +152,7 @@ nav ul li a:hover {
             gap:15px;
         }
 
-        .gallery img{
+        .gallerynew img{
             width:100%;
             height:100%;
             object-fit:cover;
@@ -162,25 +162,24 @@ nav ul li a:hover {
             box-shadow:0 3px 8px rgba(0,0,0,.2);
         }
 
-        .gallery img:hover{
+        .gallerynew img:hover{
             transform:scale(1.05);
             box-shadow:0 8px 20px rgba(0,0,0,.3);
         }
 
         @media(max-width:1000px){
-            .gallery{
+            .gallerynew{
                 grid-template-columns:repeat(3,1fr);
             }
         }
 
         @media(max-width:700px){
-            .gallery{
+            .gallerynew{
                 grid-template-columns:repeat(2,1fr);
             }
         }
-
-        @media(max-width:500px){
-            .gallery{
+        @media(max-width:470px){
+            .gallerynew{
                 grid-template-columns:1fr;
             }
         }
